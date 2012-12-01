@@ -83,6 +83,7 @@
 }
 
 + (BOOL) isJailbroken {
+#if !TARGET_IPHONE_SIMULATOR
 	//Check for Cydia.app
 	NSLog(@"stage 1");
 	BOOL yes;
@@ -109,6 +110,7 @@
 		return YES;
 	}
 	NSLog(@"All right");
+#endif
 	return NO;
 }
 
