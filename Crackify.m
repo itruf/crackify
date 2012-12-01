@@ -12,6 +12,7 @@
 
 + (BOOL) isCracked {
 #if !TARGET_IPHONE_SIMULATOR
+	
 	//Check process ID (shouldn't be root)
 	NSLog(@"stage 1");
 	int root = getgid();
@@ -19,7 +20,6 @@
 		return YES;
 	}
 	NSLog(@"All right");
-#endif
 	
 	NSLog(@"stage 2");
 	//Check SignerIdentity
@@ -45,7 +45,6 @@
 	}
 	NSLog(@"All right");
 	
-	
 	//Check files
 	NSLog(@"stage 3.1");
 	NSString* bundlePath = [[NSBundle mainBundle] bundlePath];
@@ -65,7 +64,6 @@
 	}
 	NSLog(@"All right");
 	
-	
 	//Check date of modifications in files (if different - app cracked)
 	NSLog(@"stage 4");
 	NSString* path = [NSString stringWithFormat:@"%@/Info.plist", bundlePath];
@@ -80,7 +78,7 @@
 		return YES;
 	}
 	NSLog(@"All right");
-	
+#endif
 	return NO;
 }
 
