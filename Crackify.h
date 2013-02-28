@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Crackify : NSObject
-+ (BOOL) isCracked;
-+ (BOOL) isJailbroken;
++ (BOOL)isCracked;
++ (BOOL)isJailbroken;
 @end
