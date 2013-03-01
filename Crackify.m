@@ -95,6 +95,8 @@
 	if(error==nil){
 		//Writed
 		return YES;
+	} else {
+		[[NSFileManager defaultManager] removeItemAtPath:@"/private/test_jail.txt" error:nil];
 	}
 #endif
 	return NO;
