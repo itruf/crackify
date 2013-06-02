@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "crackify"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Easy protection for iOS apps from cracking."
   s.homepage     = "https://github.com/itruf/crackify"
   s.license      = 'MIT'
