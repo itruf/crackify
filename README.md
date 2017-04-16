@@ -3,7 +3,7 @@ Crackify
 
 Easy protection for iOS apps from cracking.
 
-##How to use
+## How to use
 
 1. Import Crackify.h
 2. If you want to check was device jailbroken write:
